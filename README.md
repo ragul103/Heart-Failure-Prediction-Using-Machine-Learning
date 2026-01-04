@@ -190,7 +190,8 @@ This project is created **for educational purposes only** and should **not** be 
 ---
 
 👤 **RAGUL R**
-🔗 [LinkedIn](https://www.linkedin.com/in/rragul/)   
-📧 [[ragulrbtechit@gmail.com](mailto:ragulrbtechit@gmail.com)]
+
+🔗 LinkedIn: [LinkedIn](https://www.linkedin.com/in/rragul/)   
+📧 GitHub: [[ragulr](mailto:ragulrbtechit@gmail.com)]
 
 
