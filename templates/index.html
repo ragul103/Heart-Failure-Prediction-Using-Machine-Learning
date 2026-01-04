@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Heart Failure Prediction</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='heart.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+    <h1>❤️ Heart Failure Prediction</h1>
+    <p class="subtitle">Enter patient clinical details</p>
+
+
+        <form action="/predict" method="post">
+
+            <!-- Patient Name (UI ONLY) -->
+            <label>Patient Name</label>
+            <input type="text" name="patient_name" placeholder="Enter patient name" required>
+
+            <label>Age</label>
+            <input type="number" name="age" required>
+
+            <label>Sex</label>
+            <select name="sex">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+
+            <label>Heart Pumping Strength(%)</label>
+            <input type="number" name="ejection_fraction" required>
+
+            <label>Kidney Function Level</label>
+            <input type="number" step="any" name="serum_creatinine" required>
+
+            <label>Blood Salt Level</label>
+            <input type="number" name="serum_sodium" required>
+
+            <label>High Blood Pressure</label>
+            <select name="high_blood_pressure">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <button type="submit">Predict</button>
+        </form>
+
+
+        {% if prediction %}
+        <div class="result">
+            <h2>Prediction Result</h2>
+
+            <p><strong>Patient Name:</strong> {{ patient_name }}</p>
+            <p><strong>Status:</strong> {{ prediction }}</p>
+            <p><strong>Risk Probability:</strong> {{ probability }}</p>
+        </div>
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>
