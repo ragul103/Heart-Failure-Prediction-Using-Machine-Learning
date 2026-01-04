@@ -106,21 +106,24 @@ Heart_failure_prediction/
 ## 📸 Screenshots
 
 ### 🏠 Home Page – Patient Input Form
+A clean and user-friendly interface where users can enter key clinical details such as age, heart pumping strength, kidney function, and blood pressure. The form is designed with minimal inputs to ensure ease of use and clarity.
 
 <p align="center">
-  <img src="Dashboard 1.png" alt="Dashboard Preview" width="750"/>
+  <img src="Home page.jpeg" alt="Dashboard Preview" width="600"/>
 </p>
 
 ### 🟢 Prediction Result – Low Risk
+Shows a Low Risk (Survival) prediction with a corresponding probability score, indicating stable heart and kidney function. This helps reassure users when the clinical parameters fall within healthy ranges.
 
 <p align="center">
-  <img src="Dashboard 1.png" alt="Dashboard Preview" width="750"/>
+  <img src="Low_Risk.jpeg" alt="Dashboard Preview" width="600"/>
 </p>
 
 ### 🔴 Prediction Result – High Risk
+Displays a High Risk of Heart Failure outcome along with the calculated risk probability based on the patient’s clinical inputs. This result helps identify patients who may require immediate medical attention.
 
 <p align="center">
-  <img src="Dashboard 1.png" alt="Dashboard Preview" width="750"/>
+  <img src="High_Risk.jpeg" alt="Dashboard Preview" width="600"/>
 </p>
 
 
